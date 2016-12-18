@@ -5,10 +5,6 @@
     border-bottom: 2px solid black;
 }
 
-.dev-logo-area {
-    text-align: center;
-}
-
 .dev-title-area {
     display: inline-block;
 }
@@ -33,6 +29,15 @@
     margin-top: -13px;
 }
 
+@media screen and (max-width: 430px) {
+    .dev-icon {
+        display: none;
+    }
+    .dev-logo-title {
+        font-size: 18px;
+    }
+}
+
 .dev-right-side-controls {
     line-height: 60px;
 }
@@ -50,4 +55,18 @@
     }
 }
 
+.dev-collapsed-menu {
+    display: inline-block;
+    height: 100%;
+}
+
+.dev-nav-button {
+    height: 40px;
+    width: 60px;
+    margin-top: 10px;
+    border: 1px solid #888;
+    padding: 0;
+    font-size: 26px;
+    color: #777;
+}
 

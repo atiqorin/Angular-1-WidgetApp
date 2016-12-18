@@ -1,6 +1,6 @@
 angular.module("devFramework").directive("devFramework", function () {
     return {
-        transclude: false,
+        transclude: true,
         scope: {
             title: '@',
             subtitle: '@',

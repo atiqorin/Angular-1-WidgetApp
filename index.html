@@ -8,12 +8,15 @@
     <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
     <link href="app/app.css" rel="stylesheet" />
     <link href="ext-modules/devFramework/devFramework.css" rel="stylesheet" />
-
+    <link rel="stylesheet" href="ext-modules/devMenu/devMenu.css">
+    
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/angular/angular.min.js"></script>
 
     <script src="ext-modules/devMenu/devMenu.Module.js"></script>
-
+    <script src="ext-modules/devMenu/devMenu.Controller.js"></script>
+    <script src="ext-modules/devMenu/devMenu.Directive.js"></script>
+    <script src="ext-modules/devMenu/devMenuItem.Directive.js"></script>
 
     <script src="ext-modules/devDashboard/devDashboard.Module.js"></script>
 
@@ -32,6 +35,11 @@
                   subtitle="Administrative Application"
                   icon-file="images/kayak-icon-flat.png">
 
+        <dev-menu>
+            <dev-menu-item label="Dashboard" icon="fa-dashboard" route="dashboard"></dev-menu-item>
+            <dev-menu-item label="Locations" icon="fa-location-arrow" route="locations"></dev-menu-item>
+            <dev-menu-item label="Raft Guides" icon="fa-user" route="guides"></dev-menu-item>
+        </dev-menu>
     </dev-framework>
 
 </body>
