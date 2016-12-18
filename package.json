@@ -1,0 +1,25 @@
+{
+  "name": "widget-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atiqorin/Angular-1-WidgetApp.git"
+  },
+  "author": "atiqorin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atiqorin/Angular-1-WidgetApp/issues"
+  },
+  "homepage": "https://github.com/atiqorin/Angular-1-WidgetApp#readme",
+  "dependencies": {
+    "angular": "^1.4.1",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.1.1"
+  }
+}
