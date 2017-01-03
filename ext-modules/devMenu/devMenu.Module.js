@@ -1,1 +1,1 @@
-angular.module('devMenu', []);
+angular.module('devMenu', ["ngAnimate"]);

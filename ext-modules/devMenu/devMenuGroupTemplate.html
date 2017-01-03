@@ -1,0 +1,12 @@
+<li class="dev-selectable-item" ng-click="clicked()" ng-class="{'dev-item-horizontal': !isVertical()}">
+    <div class="dev-noselect">
+        <i class="fa {{icon}} dev-menu-icon"></i>
+        {{label}}
+        <i ng-if="isVertical()"
+           class="fa fa-chevron-left dev-group-indicator-left"
+           ng-class="{'fa-rotate-270': isOpen}"></i>
+    </div>
+</li>
+<div ng-show="isOpen" class="dev-subitem-section dev-fade-in-animation" ng-class="{'dev-popup-menu': !isVertical() }">
+    <ul ng-transclude></ul>
+</div>

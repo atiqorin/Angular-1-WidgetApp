@@ -18,6 +18,7 @@
   "homepage": "https://github.com/atiqorin/Angular-1-WidgetApp#readme",
   "dependencies": {
     "angular": "^1.4.1",
+    "angular-animate": "^1.4.1",
     "bootstrap": "^3.3.7",
     "font-awesome": "^4.7.0",
     "jquery": "^3.1.1"
