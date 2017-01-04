@@ -4,11 +4,16 @@ angular.module("devFramework").controller("devFrameworkController",
 
             $scope.isMenuVisible = true;
             $scope.isMenuButtonVisible = true;
+            $scope.isMenuVertical = true;
 
             $scope.$on('dev-menu-item-selected-event', function (evt, data) {
                 $scope.routeString = data.route;
                 checkWidth();
                 broadcastMenuState();
+            });
+            
+            $scope.$on('dev-menu-orientation-changed-event', function (evt, data) {
+                $scope.isMenuVertical = data.isMenuVertical;
             });
 
             $($window).on('resize.devFramework', function () {
@@ -38,7 +43,9 @@ angular.module("devFramework").controller("devFrameworkController",
             var broadcastMenuState = function () {
                 $rootScope.$broadcast('dev-menu-show',
                     {
-                        show: $scope.isMenuVisible
+                        show: $scope.isMenuVisible,
+                        isVertical: $scope.isMenuVertical,
+                        allowHorizontalToggle: !$scope.isMenuButtonVisible
                     });
             };
 
