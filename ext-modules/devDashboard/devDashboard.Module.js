@@ -1,1 +1,1 @@
-angular.module("devDashboard", []);
+angular.module("devDashboard", ["gridster"]);
