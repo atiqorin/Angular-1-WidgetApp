@@ -1,1 +1,1 @@
-angular.module("app", ["devFramework"]);
+angular.module("app", ["ngRoute","devFramework"]);

@@ -1,6 +1,6 @@
 angular.module("devFramework").controller("devFrameworkController",
-    ['$scope', '$rootScope', '$window', '$timeout',
-        function ($scope, $rootScope, $window, $timeout) {
+    ['$scope', '$rootScope', '$window', '$timeout', '$location',
+        function ($scope, $rootScope, $window, $timeout, $location) {
 
             $scope.isMenuVisible = true;
             $scope.isMenuButtonVisible = true;
@@ -8,6 +8,7 @@ angular.module("devFramework").controller("devFrameworkController",
 
             $scope.$on('dev-menu-item-selected-event', function (evt, data) {
                 $scope.routeString = data.route;
+                $location.path(data.route);
                 checkWidth();
                 broadcastMenuState();
             });
