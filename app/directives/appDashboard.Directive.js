@@ -5,6 +5,8 @@ angular.module('app').directive('appDashboard', [function () {
         template: '<dev-dashboard></dev-dashboard>',
         link: function (scope) {
 
+            scope.title = 'My awesome Dashboard';
+
             scope.gridsterOpts = {
                 columns: 12,
                 margins: [20, 20],
@@ -13,7 +15,7 @@ angular.module('app').directive('appDashboard', [function () {
                 floating: true,
                 swapping: false
             };
-                        
+
             scope.widgets = [
                 {
                     sizeX: 3,
