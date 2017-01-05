@@ -1,8 +1,22 @@
 
-<div gridster>
+<div gridster="gridsterOpts">
     <ul>
         <li gridster-item="item" ng-repeat="item in widgets">
-            <div></div>
+
+            <div class="dev-widget-header">
+                <span>{{ item.title }}</span>
+                <div class="dev-widget-header-buttons">
+                    <button class="btn btn-default pull-right">
+                        <i class="fa fa-remove"/>
+                    </button>
+                    <button class="btn btn-default pull-right">
+                        <i class="fa fa-gear" />
+                    </button>
+                </div>
+            </div>
+
+            <div class="dev-widget-body">
+            </div>
         </li>
     </ul>
 </div>
